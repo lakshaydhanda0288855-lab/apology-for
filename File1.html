@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .heart {
+            font-size: 80px;
+            color: #e74c3c;
+            margin-bottom: 30px;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            10%, 30% { transform: scale(1.1); }
+            20%, 40% { transform: scale(1); }
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .message {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #34495e;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .message p {
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            font-size: 24px;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 40px;
+        }
+
+        .flowers {
+            font-size: 40px;
+            margin-top: 30px;
+            letter-spacing: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+            
+            h1 {
+                font-size: 36px;
+            }
+            
+            .message {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>I'm Sorry</h1>
+        
+        <div class="message">
+            <p>I know I messed up, and there's no excuse for what I did. I am really sorry about that and will never happen again.</p>
+            
+            <p> That's the last thing I ever wanted to do.</p>
+            
+            <p>I'm not asking you to forget what happened, but I'm asking for a apology from you this time and hopefully last time.</p>
+            
+            
+            <p>I love you, and I'm truly, deeply sorry😟</p>
+        </div>
+        
+        <div class="signature">With all my heart</div>
+        <div class="flowers">❤️💕🖤</div>
+    </div>
+</body>
+</html>
